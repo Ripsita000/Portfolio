@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | B.Tech CSE Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gray-800 shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-400">MyPortfolio</h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 text-white">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Ripsita Pati</span></h2>
+      <h3 class="text-2xl md:text-3xl mb-6"><span id="typed"></span></h3>
+      <a href="#contact" class="px-6 py-3 bg-yellow-400 text-black rounded-lg shadow-lg hover:bg-yellow-300 transition">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">About Me</h2>
+    <p class="text-lg text-gray-300 leading-relaxed text-center">
+      I am a final year <strong>B.Tech Computer Science</strong> student passionate about <strong>Web Development, Machine Learning, and Database Management</strong>.  
+      I love solving real-world problems through innovative technologies and continuously learning new skills.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-800 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center text-blue-400">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">C / C++</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">Java</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">Python</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">HTML / CSS / JS</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">React.js</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">Node.js</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">MySQL</div>
+        <div class="p-6 bg-gray-900 rounded-xl shadow hover:shadow-lg">Machine Learning</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center text-blue-400">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-lg">
+        <h3 class="text-xl font-bold mb-2 text-white">Heart Disease Prediction</h3>
+        <p class="text-gray-400">Machine Learning project predicting heart diseases using ML models.</p>
+        <a href="#" class="text-blue-400 font-medium mt-2 inline-block">View Project →</a>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-lg">
+        <h3 class="text-xl font-bold mb-2 text-white">Smart Home Automation</h3>
+        <p class="text-gray-400">IoT project using NodeMCU ESP8266, Blynk, and Google Assistant.</p>
+        <a href="#" class="text-blue-400 font-medium mt-2 inline-block">View Project →</a>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-lg">
+        <h3 class="text-xl font-bold mb-2 text-white">Movie React App</h3>
+        <p class="text-gray-400">React + API-based movie search and recommendation app.</p>
+        <a href="#" class="text-blue-400 font-medium mt-2 inline-block">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="bg-gray-800 py-16">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-blue-400">Contact Me</h2>
+    <p class="text-lg mb-6 text-gray-300">Feel free to connect with me.</p>
+    
+    <form action="https://formspree.io/f/mrblnkwj" method="POST" class="space-y-4 max-w-lg mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg bg-gray-900 text-gray-100" required>
+      <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg bg-gray-900 text-gray-100" required>
+      <textarea name="message" placeholder="Your Message" rows="4" class="w-full px-4 py-3 border rounded-lg bg-gray-900 text-gray-100" required></textarea>
+      <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-500">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+    <!-- Footer -->
+  <footer class="bg-gray-800 shadow-md py-6 text-center text-gray-400">
+    <p>© 2025 Ripsita Pati | Final Year B.Tech (CSE)</p>
+    
+    <!-- Social Links -->
+    <div class="mt-4 flex justify-center space-x-6">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ripsitapati@gmail.com" 
+   target="_blank" class="hover:text-blue-400">
+  📧 Email
+</a>
+
+      <a href="https://github.com/your-github-username" target="_blank" class="hover:text-blue-400">💻 GitHub</a>
+      <a href="https://linkedin.com/in/your-linkedin-id" target="_blank" class="hover:text-blue-400">🔗 LinkedIn</a>
+    </div>
+  </footer>
+
+
+  <script>
+    var typed = new Typed("#typed", {
+      strings: ["B.Tech CSE Student", "Web Developer", "Machine Learning Enthusiast", "Database Systems Learner"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>
